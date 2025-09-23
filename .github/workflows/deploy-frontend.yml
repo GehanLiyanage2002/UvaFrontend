@@ -19,7 +19,7 @@ jobs:
         run: |
           npm install
           npm run build
-        working-directory: ./UWA-PMS-Frontend-main
+        working-directory: .
         env:
           REACT_APP_API_URL: https://my-backend-app-fgftfxgtcshja7an.southindia-01.azurewebsites.net
 
