@@ -21,7 +21,7 @@ jobs:
           npm run build
         working-directory: .
         env:
-          REACT_APP_API_URL: https://my-backend-app-fgftfxgtcshja7an.southindia-01.azurewebsites.net
+          VITE_BASE_URL: http://my-backend-app-fgftfxgtcshja7an.southindia-01.azurewebsites.net
 
       - name: Deploy to Azure
         uses: azure/webapps-deploy@v2
