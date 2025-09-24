@@ -3,11 +3,12 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react()],
+  base: "./", // ✅ ensures relative paths, important for Azure App Service
   resolve: {
-    // You can add alias here if needed
+    // add aliases if needed
   },
   build: {
-    outDir: "dist", // ✅ Ensure build output goes to "dist"
+    outDir: "dist", // ✅ matches your setup
     emptyOutDir: true,
   },
 });
